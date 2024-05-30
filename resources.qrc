@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/grid_ref_converter" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
