@@ -1,32 +1,8 @@
-Plugin Builder Results
+A QGIS plugin for plotting data referenced with the British National Grid (BNG) system. 
 
-Your plugin GridRefToXY was created in:
-    C:/Users/alexa/Root/dev/python/qgis-plugins\grid_ref_converter
+Converts BNG two-letter references (0-10 digits) to Cartesian (XY) coordinates, adhering to the bottom-left corner convention. 
 
-Your QGIS plugin directory is located at:
-    C:/Users/alexa/AppData/Roaming/QGIS/QGIS3/profiles/AMC/python/plugins
+Input: a CSV with at least one record and two fields referring to an 'id' and a 'grid reference'. 
+Output: a temporary vector layer (point-geometry) with four fields: 'id', 'grid reference', 'easting' and 'northing'. 
 
-What's Next:
-
-  * Copy the entire directory containing your new plugin to the QGIS plugin
-    directory
-
-  * Compile the resources file using pyrcc5
-
-  * Run the tests (``make test``)
-
-  * Test the plugin by enabling it in the QGIS plugin manager
-
-  * Customize it by editing the implementation file: ``grid_ref_converter.py``
-
-  * Create your own custom icon, replacing the default icon.png
-
-  * Modify your user interface by opening GridRefToXY_dialog_base.ui in Qt Designer
-
-  * You can use the Makefile to compile your Ui and resource files when
-    you make changes. This requires GNU make (gmake)
-
-For more information, see the PyQGIS Developer Cookbook at:
-http://www.qgis.org/pyqgis-cookbook/index.html
-
-(C) 2011-2018 GeoApt LLC - geoapt.com
+Additional support for plotting the centre of a grid square (counter to the bottom-left principle) and for plotting DINTY tetrads is being tested.
